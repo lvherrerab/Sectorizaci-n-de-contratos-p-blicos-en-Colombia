@@ -59,3 +59,7 @@ for offset in range (loops):
 
 
 contratacion = leer_parquet(os.path.join(dir_proyecto,'INPUTS'))
+data = pd.DataFrame(contratacion)
+
+
+data.to_csv('data.csv', index=False)
