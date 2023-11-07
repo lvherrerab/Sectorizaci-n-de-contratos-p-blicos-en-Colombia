@@ -1,0 +1,5 @@
+outs:
+- md5: 8a7ef9e09cda0d1ebd73d479b7b39ee6
+  size: 12485840
+  hash: md5
+  path: muestra_sin_contexto.csv
