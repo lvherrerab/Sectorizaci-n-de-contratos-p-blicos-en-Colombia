@@ -1,3 +1,5 @@
+import mlflow
+import mlflow.sklearn
 from sklearn_extra.cluster import KMedoids
 import pandas as pd
 import numpy as np
@@ -12,6 +14,8 @@ df= pd.read_csv("https://raw.githubusercontent.com/lvherrerab/Sectorizaci-n-de-c
 df_sample = df.sample(frac=0.3)
 df_sample
 
+# Preprocesamiento
+
 # Crear un vectorizador TF-IDF
 tfidf_vectorizer = TfidfVectorizer()
 
@@ -24,6 +28,9 @@ terms = tfidf_vectorizer.get_feature_names_out()
 # Mostrar la matriz TF-IDF y el vocabulario
 print(tfidf_matrix.toarray())
 print(terms)
+
+# registre el experimento
+experiment = mlflow.set_experiment("/Shared/K-medoides")
 
 # Crear una instancia del modelo K-Medoides con el número deseado de clusters (K)
 kmedoids = KMedoids(n_clusters=24)
