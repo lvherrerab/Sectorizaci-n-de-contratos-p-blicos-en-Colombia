@@ -29,9 +29,6 @@ terms = tfidf_vectorizer.get_feature_names_out()
 print(tfidf_matrix.toarray())
 print(terms)
 
-# registre el experimento
-experiment = mlflow.set_experiment("/Shared/K-medoides")
-
 # Crear una instancia del modelo K-Medoides con el número deseado de clusters (K)
 kmedoids = KMedoids(n_clusters=24)
 
@@ -60,6 +57,26 @@ from sklearn.metrics import silhouette_score
 
 silhouette_avg = silhouette_score(tfidf_matrix, df_sample['cluster'])
 print(f"Coeficiente de Silhouette: {silhouette_avg}")
+
+# registre el experimento
+experiment = mlflow.set_experiment("/Shared/K-medoides")
+
+with mlflow.start_run(experiment_id=experiment.experiment_id):
+    # Log de los parámetros del modelo
+    mlflow.log_param("n_clusters", n_clusters)
+    mlflow.log_param("random_state", 42)
+
+    # Log de los resultados del modelo
+    mlflow.log_param("medoids_indices", medoids.tolist())
+    mlflow.log_param("cluster_labels", labels.tolist())
+    mlflow.log_param("suma_distancias", suma_distancias)
+    mlflow.log_param("silhouette_score", silhouette_avg)
+
+    # Log del modelo K-Medoides (esto puede no ser posible si el modelo no es serializable)
+    try:
+        mlflow.sklearn.log_model(kmedoids, "kmedoids_model")
+    except Exception as e:
+        print(f"Error al intentar registrar el modelo: {str(e)}")
 
 
 

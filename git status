@@ -1,0 +1,262 @@
+[33mcommit 943444578f4ef06599c999716f3acae10421cb4b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: wgomeza <w.gomeza@uniandes.edu.co>
+Date:   Sat Nov 11 18:35:04 2023 -0500
+
+    '#' Incluyendo el codigo mlflows
+
+[33mcommit 7eb2b8a1f524157db1bab6dc02762ebfdd4f838c[m
+Author: wgomeza <w.gomeza@uniandes.edu.co>
+Date:   Sat Nov 11 17:08:00 2023 -0500
+
+    Modelo KMedoids.py
+
+[33mcommit e764c874d64f9c8262ff83406471d0a33a789938[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 10 19:05:20 2023 -0500
+
+    Modelo k_medias
+
+[33mcommit f5bd68ccd8cb94a3bb6f56385b7b78324c1c1c7c[m
+Author: wgomeza <w.gomeza@uniandes.edu.co>
+Date:   Fri Nov 10 19:00:05 2023 -0500
+
+    Modelo K medoides
+
+[33mcommit f27f72d4418db8904c132c144738640a42770c81[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 10 17:50:33 2023 -0500
+
+    Modelo Aglomerative Cluster
+
+[33mcommit 34a1982d2e6fd8a8ebcb5e8c2da1de8fc18683ea[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 10 15:35:35 2023 -0500
+
+    Ajuste hiperparametros
+
+[33mcommit e46d406675bebaccdaf67daba33331a7447ac737[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Wed Nov 8 18:06:59 2023 -0500
+
+    Ajuste métricas
+
+[33mcommit 21c520cb84d83cbe0d66931f9a2781f3f1828030[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Wed Nov 8 17:39:47 2023 -0500
+
+    Metrica de desmpeño
+
+[33mcommit 53cc9f84d6de0734eae09ce6d70c472957087938[m
+Merge: 3c36e83 7276556
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 18:28:50 2023 -0500
+
+    Merge branch 'main' of https://github.com/lvherrerab/Sectorizaci-n-de-contratos-p-blicos-en-Colombia
+
+[33mcommit 3c36e833470816eb1595ef6f3d6bbbc2d2428650[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 18:27:07 2023 -0500
+
+    Ajuste impresión data "OUTPUT"
+
+[33mcommit 72765565f98bea5d863a90aae85ae2e759b42e45[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Tue Nov 7 23:20:35 2023 +0000
+
+    data sin contexto con todas las variables
+
+[33mcommit eae69e020f07016f4a0bddf0847a6396dba73192[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Tue Nov 7 23:18:17 2023 +0000
+
+    Dejar de rastrear muestra_sincont_todas_varia.csv por Git
+
+[33mcommit 76c3a42784bd52d513d550bd0abfac239405489b[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 17:43:34 2023 -0500
+
+    DESCARGA DATA
+
+[33mcommit 9e3f3e7bddc15d1df27086c271941f2e3dc24cba[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 17:42:35 2023 -0500
+
+    Ajuste con la nueva data
+
+[33mcommit 7bf101b0abae3c2dbdd04d3fd8bab0db65abaead[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 17:11:29 2023 -0500
+
+    .
+
+[33mcommit b95839239f78fec5f239b942e58dba22a90368f9[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 16:48:44 2023 -0500
+
+    Preprocesamiento sin contexto
+
+[33mcommit 8f0f8f1c2121b953e9fb092ccf1f388ca46399a9[m
+Merge: 4caf0ad bc45fd2
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 16:44:40 2023 -0500
+
+    Merge branch 'main' of https://github.com/lvherrerab/Sectorizaci-n-de-contratos-p-blicos-en-Colombia
+
+[33mcommit bc45fd2620fe529e623508d2e13866eb076bf6d5[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Tue Nov 7 21:34:49 2023 +0000
+
+    preprocesamiento de data sin contexto
+
+[33mcommit be9be98df73b3026d256c86e876d6f22d572d5a3[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Tue Nov 7 21:29:31 2023 +0000
+
+    Dejar de rastrear Data/muestra_sin_contexto.csv por Git
+
+[33mcommit 4caf0ade5d87e19a3388d8a434c97e92848df642[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 16:15:31 2023 -0500
+
+    Ajuste numeracion
+
+[33mcommit 983086ebd39ed0c36ed31d00260768b89e0d1a53[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Tue Nov 7 16:11:03 2023 -0500
+
+    Data_sin_contexto
+
+[33mcommit 890dfbf1eb7afefc196e27ae40e613e1d7e007fd[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Sat Nov 4 02:34:36 2023 +0000
+
+    Data objeto del contrato
+
+[33mcommit e8d333a48f17d4d4859a5beca2a9766ee5abb96f[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Sat Nov 4 02:33:41 2023 +0000
+
+    stop tracking Data/muestra_al_35_sector.csv
+
+[33mcommit 836d796d2f98ffcf2c351679de894cbc540be948[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 3 18:33:56 2023 -0500
+
+    Carga muestra en carpeta data
+
+[33mcommit 8680b73cbb392c50b534d233e11ed0cb5a09c28e[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 3 18:30:59 2023 -0500
+
+    muestra en carpeta data
+
+[33mcommit b88c7a24ee4e36282a814036fc19cf20884224de[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 3 18:13:32 2023 -0500
+
+    Ajuste muestra del 35%
+
+[33mcommit 87c396bf5e9ff70fabbda4c1a74eede23cb466c3[m
+Merge: 0261663 6a714f0
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 3 18:05:00 2023 -0500
+
+    Merge branch 'main' of https://github.com/lvherrerab/Sectorizaci-n-de-contratos-p-blicos-en-Colombia
+
+[33mcommit 02616637856cfa180e411b9692160a48c5025bb0[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Fri Nov 3 18:04:57 2023 -0500
+
+    .
+
+[33mcommit 6a714f04682f7c3e2f0b832fec4de77f5988fdae[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Tue Oct 31 03:56:47 2023 +0000
+
+    Add initial data
+
+[33mcommit 4a2c77c88d05218b404b59ec6b87654936c42cc6[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Tue Oct 31 03:43:21 2023 +0000
+
+    stop tracking Data/data.csv
+
+[33mcommit 27926c084dccc5d56c2a3164e8e5d0150bb08c04[m
+Merge: 9adef7a 6dce734
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 22:22:38 2023 -0500
+
+    Merge branch 'main' of https://github.com/lvherrerab/Sectorizaci-n-de-contratos-p-blicos-en-Colombia
+
+[33mcommit 9adef7a2700dd7b46f2df993eb771124799abd36[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 22:22:35 2023 -0500
+
+    Ajuste data descargada
+
+[33mcommit 6dce73497fcede901886dac234eab7a5e879a436[m
+Author: wgomeza <w.gomeza@uniandes.edu.co>
+Date:   Mon Oct 30 22:03:30 2023 -0500
+
+    Ajuste del directorio
+
+[33mcommit af6904cfd4b70eabf447c6a26096f3ddc2b2d085[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 21:13:37 2023 -0500
+
+    Ajuste funciones de descarga
+
+[33mcommit 542d0a72346fb06903fee53e1bae9b5267e2067c[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 20:38:59 2023 -0500
+
+    Ajuste Variables
+
+[33mcommit d9913cb76e8149db9ca96435a62eb218b8cc9387[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 17:57:31 2023 -0500
+
+    Ajuste funciones
+
+[33mcommit 81e5346bd128c0ca0de4ca9c3b87f183daf32b80[m
+Merge: 38e6831 29d45f3
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 09:31:03 2023 -0500
+
+    Merge branch 'main' of https://github.com/lvherrerab/Sectorizaci-n-de-contratos-p-blicos-en-Colombia
+
+[33mcommit 38e68310c1544f8bc5f75f9324e354c0a178a0be[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Mon Oct 30 09:31:01 2023 -0500
+
+    Ajuste
+
+[33mcommit 29d45f303ecbac0f36ad05e9a4c95c16ae579303[m
+Author: Ubuntu <ubuntu@ip-172-31-24-190.ec2.internal>
+Date:   Sat Oct 28 15:11:53 2023 +0000
+
+    Inicializacion de DVC
+
+[33mcommit 820dbb7debde2986b1b69af458acdebb401f02a6[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Sat Oct 28 10:07:06 2023 -0500
+
+    Descarga de la data
+
+[33mcommit dc5a392d5e70b2b043cdf36e13328dfaaa908cd3[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Sat Oct 28 08:33:48 2023 -0500
+
+    Data
+
+[33mcommit 78f9079d74f2586fa24711a91b0e95ba872422d4[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Sat Oct 28 07:41:05 2023 -0500
+
+    Analisis exploratorio de los datos
+
+[33mcommit d7e62050beac349012608b9e02c155a49625bd80[m
+Author: lvherrerab <l.herrerab@uniandes.edu.co>
+Date:   Sat Oct 28 07:37:48 2023 -0500
+
+    Descarga de información de la plataforma pública SECOP II
