@@ -10,7 +10,7 @@ Created on Thu Nov 23 11:08:31 2023
 from flask import Flask
 from flask_restx import Api, Resource, fields
 from flask_cors import CORS
-from model import k_medias
+from model import clustering_model
 
 # Configuración de Flask
 app = Flask(__name__)
