@@ -8,7 +8,7 @@ from fastapi.encoders import jsonable_encoder
 from loguru import logger
 from model import __version__ as model_version
 from model.clustering_model import predict_cluster
-from app import __version__, schemas
+from app import  schemas
 from app.config import settings
 
 api_router = APIRouter()
@@ -20,7 +20,7 @@ def health() -> dict:
     Root Get
     """
     health = schemas.Health(
-        name=settings.PROJECT_NAME, api_version=__version__, model_version=model_version
+        name=settings.PROJECT_NAME, api_version= "0.0.1", model_version=model_version
     )
 
     return health.dict()
