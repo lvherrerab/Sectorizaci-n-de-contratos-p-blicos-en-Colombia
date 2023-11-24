@@ -48,7 +48,6 @@ def health() -> dict:
 
 #NUEVA
 
-
 @api_router.post("/predict", response_model=schemas.PredictionResults, status_code=200)
 async def predict(input_data: schemas.SingleDataInput) -> Any:
     """
@@ -61,6 +60,13 @@ async def predict(input_data: schemas.SingleDataInput) -> Any:
     
     try:
         results = predict_cluster(input_text)
+        
+        if isinstance(results, np.int32):
+            # Manejar el caso en que predict_cluster devuelve un numpy.int32
+            error_message = "Prediction validation error: Unexpected result type."
+            logger.warning(error_message)
+            raise HTTPException(status_code=400, detail={"error": error_message})
+            
         logger.info(f"Cluster results: {results.get('Sector')}")
         return results
     except Exception as e:
