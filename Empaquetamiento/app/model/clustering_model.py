@@ -79,14 +79,8 @@ def predict_cluster(input_text):
     # Utilizar el modelo K-Means para predecir el cluster
     cluster_label = kmeans.predict(input_matrix)[0]
 
-    # Devolver los resultados en un diccionario
-    results = {
-        "errors": None,
-        "version": "1.0",  # Puedes cambiar esto según tu necesidad
-        "result": {"cluster_label": cluster_label}
-    }
 
-    return results
+    return cluster_label
 
 
 #mi version anterior
