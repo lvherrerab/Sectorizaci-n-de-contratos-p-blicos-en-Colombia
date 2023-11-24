@@ -49,22 +49,21 @@ def health() -> dict:
 #NUEVA
 
 
-# Ruta para realizar las predicciones
 @api_router.post("/predict", response_model=schemas.PredictionResults, status_code=200)
 async def predict(input_data: schemas.SingleDataInput) -> Any:
     """
     Prediccion usando el modelo de KMEDIAS
     """
 
-    input_text= input_data.text
+    input_text = input_data.text
 
     logger.info(f"Making prediction on input text: {input_text}")
-    results = predict_cluster(input_text)
-
-    if results["errors"] is not None:
-        logger.warning(f"Prediction validation error: {results.get('errors')}")
-        raise HTTPException(status_code=400, detail=json.loads(results["errors"]))
-
-    logger.info(f"Cluster results: {results.get('Sector')}")
-
-    return results
+    
+    try:
+        results = predict_cluster(input_text)
+        logger.info(f"Cluster results: {results.get('Sector')}")
+        return results
+    except Exception as e:
+        error_message = f"Prediction validation error: {str(e)}"
+        logger.warning(error_message)
+        raise HTTPException(status_code=400, detail={"error": error_message})
