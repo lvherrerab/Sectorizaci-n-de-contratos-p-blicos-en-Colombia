@@ -13,8 +13,8 @@ app = Dash(__name__)
 import requests
 import json
 from dash.dependencies import Input, Output, State
-
-
+from loguru import logger
+import os
 
 # Load data from csv
 def load_data():
@@ -106,6 +106,13 @@ dcc.Interval(
 ),
 
 
+
+
+# PREDICTION API URL 
+api_url = os.getenv('API_URL')
+api_url = "http://{}:5001/api/predict".format(api_url)
+
+
 @app.callback(
     Output(component_id='resultado-container', component_property='children'),
     [Input('interval-component', 'n_intervals')],
@@ -113,42 +120,31 @@ dcc.Interval(
      State(component_id='input', component_property='value')]
 )
 
+
+
 def update_output_div(n_clicks, input_text):
-    if n_clicks > 0:
-        # Crear el payload para la API
-        api_payload = {
-            "text": input_text
-        }
+    myreq = {
+        "inputs": [
+            {
+            "text": str(input_text)
+            }
+        ]
+      }
+    headers =  {"Content-Type":"application/json", "accept": "application/json"}
 
-        # URL de la API
-        api_url = "http://localhost:5000/predict"
+    # POST call to the API
+    response = requests.post(api_url, data=json.dumps(myreq), headers=headers)
+    data = response.json()["cluster_label"]
+    logger.info("Response: {}".format(data))
 
-        # Encabezados de la solicitud
-        headers = {"Content-Type": "application/json"}
+    # Pick result to return from json format
+    result = "El sector correspondiente al contrato es:"  + str(data)
+    
+    return result 
 
-        try:
-            # Realizar la solicitud POST a la API
-            response = requests.post(api_url, data=json.dumps(api_payload), headers=headers)
+ 
 
-            # Verificar si la solicitud fue exitosa (código de estado 200)
-            if response.status_code == 200:
-                # Obtener el resultado de la API
-                api_result = response.json()
-                cluster_label = api_result.get("cluster_label", "No se pudo obtener el resultado")
-            else:
-                cluster_label = "Error al llamar a la API"
-        except Exception as e:
-            cluster_label = f"Error en la llamada a la API: {str(e)}"
-
-        # Alinear el texto al centro
-        return html.P(f"Resultado de la asignación de sector: {cluster_label}", style={"text-align": "center"})
-    else:
-        return ""
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
+    logger.info("Running dash")
     app.run_server(debug=True)
-    
-    
-    
-    
+
