@@ -1,9 +1,0 @@
-Flask==1.1.4
-Flask-Cors==3.0.10
-Flask-Restx==0.5.1
-MarkupSafe==1.1.1
-joblib==1.1.1
-pandas==1.3.3
-requests==2.26.0
-scikit-learn==1.3.2
-unidecode==1.3.7
