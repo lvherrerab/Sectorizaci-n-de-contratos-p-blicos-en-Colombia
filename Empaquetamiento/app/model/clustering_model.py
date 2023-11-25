@@ -83,16 +83,4 @@ def predict_cluster(input_text):
     return cluster_label
 
 
-#mi version anterior
 
-#def predict_cluster(input_text):
-#    # Realizar el preprocesamiento del texto
-#    preprocessed_text = limpiar_texto(input_text)
-
-    # Utilizar el vectorizador TF-IDF para convertir el texto a una matriz TF-IDF
-#    input_matrix = tfidf_vectorizer.transform([preprocessed_text])
-
-    # Utilizar el modelo K-Means para predecir el cluster
-#    cluster_label = kmeans.predict(input_matrix)[0]
-
-#    return cluster_label
