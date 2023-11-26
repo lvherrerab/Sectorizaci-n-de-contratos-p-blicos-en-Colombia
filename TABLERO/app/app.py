@@ -143,7 +143,7 @@ def update_output_div(n_clicks, input_value):
            cluster_label = data.get("cluster_label")
            label=""
            if cluster_label == 11: 
-               label="INFRAESTRUCTURA"
+               label="EDUCACIÓN"
            elif cluster_label==22: 
                label="SALUD"
            elif cluster_label==1: 
