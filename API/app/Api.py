@@ -44,4 +44,4 @@ class TextClusterApi(Resource):
         return {'cluster_label': cluster_label}, 200
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=8001)
+    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=8002)
