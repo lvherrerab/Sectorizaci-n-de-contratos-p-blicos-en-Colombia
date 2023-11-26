@@ -200,7 +200,7 @@ def update_output_div(n_clicks, input_value):
             logger.error("Error al decodificar la respuesta JSON: {}".format(e))
             result = "Error al procesar la respuesta JSON de la API."
     
-    return json.dumps(myreq) + "    " + result + "    " 
+    return result 
 
 if __name__ == "__main__":
     app.run_server(debug=True)
